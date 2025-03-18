@@ -1,54 +1,55 @@
-# React + TypeScript + Vite
+# 🎬 KaleidoScope 
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A React-based movie search application that allows users to explore movies, view details, and manage a favorites list.  
 
-Currently, two official plugins are available:
+## 🚀 Features  
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- 🔍 **Search Movies**: Type a movie name to fetch results from the [OMDb API](https://www.omdbapi.com/).  
+- 🖼 **Movie List**: Display search results in a responsive grid layout using Flexbox.  
+- 📄 **Movie Details**: Click on a movie to view additional details.  
+- ❤️ **Favorites List**: Add/remove movies from a Redux-powered favorites list.  
+- ⚡ **Optimized Performance**: Uses `useCallback` and `useMemo` for better efficiency.  
 
-## Expanding the ESLint configuration
+## 🛠️ Tech Stack  
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- **React** (Functional Components, Hooks)  
+- **Redux** (State Management for Favorites)  
+- **Fetch API** (OMDb API Integration)  
+- **Flexbox/Grid** (Responsive UI)  
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+## 📸 Screenshots  
+![Alt Text](./screenshot.jpg)
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## 🏗️ Installation  
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+1. Clone the repository:  
+    ```bash
+    git clone https://github.com/SachinDas246/kaleidoscope.git
+    cd movie-explorer
+    ```
+2. Install dependencies:  
+    ```bash
+    npm install
+    ```
+3. Create a .env file and add your OMDb Url with API key:
+    ```env
+    VITE_OMDB_BASE_URL=http://www.omdbapi.com/?apikey=<key>
+    ```
+4. Start the development server:
+    ``` bash
+    npm run dev
+    ```
+## 🌍 Deployment
+The application is deployed on Vercel/Netlify: [Live Demo](https://kaleidoscope246.vercel.app/)
+### 📜 Bonus Features   
+✅ Pagination  
+✅ Loading Indicator  
+✅ Dark Mode  
+
+📧 Contact
+For any queries, feel free to reach out.
+
+🔗 GitHub Repository: [SachinDas246/kaleidoscope](https://github.com/SachinDas246/kaleidoscope)
+
+Let me know if you want any modifications! 😊
