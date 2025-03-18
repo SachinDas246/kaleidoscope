@@ -20,6 +20,15 @@ const Favorite = () => {
             ))
           }
         </div>
+        <div>
+          {
+            favorites.movies.length == 0 ? (
+              <div>
+                <p className='text-gray-600 dark:text-white'>Looks like you don't have any movies in favourite</p>
+              </div>
+            ):null
+          }
+        </div>
       </div>      
     </div>
   )
