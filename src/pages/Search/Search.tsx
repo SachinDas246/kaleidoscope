@@ -115,7 +115,7 @@ const Search = () => {
               {
               query.length < 2?(
               <div>
-                <p className="text-gray-400 text-center text-sm dark:text-white "> Type atlest 3 letters to get started..</p>
+                <p className="text-gray-400 text-center text-sm dark:text-white "> Type atleast 3 letters to get started..</p>
               </div>):null
               }
             </div>
